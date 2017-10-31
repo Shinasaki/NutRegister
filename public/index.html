@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>TEST</title>
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+    <div class='wrapper'>
+        <form class="form-signin">
+            <h2 class="form-signin-heading">ลงทะเบียน</h2>
+            <div class="file-field input-field">
+                <div class="btn">
+                    <span>upload</span>
+                    <input type="file" id='image'>
+                </div>
+                <div class="file-path-wrapper">
+                    <input class="file-path validate" type="text" id='image2'>
+                </div>
+            </div>
+            <div class="input-field col s12">
+                <input placeholder="" id="email" type="text" class="validate">
+                <label for="email">E-mail</label>
+            </div>
+            <div class="input-field col s12">
+                <input placeholder="" id="name" type="text" class="validate">
+                <label for="name">ชื่อ-นามสกุล</label>
+            </div>
+            <div class="input-field col s12">
+                <select id='when' multiple>
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="ปวช">ปวช</option>
+                    <option value="ปวส">ปวส</option>
+                    <option value="ปวท">ปวท</option>
+                    <option value="อื่นๆ">อื่นๆ</option>
+                </select>
+                <label>เรียนจบ</label>
+            </div>
+            <div class="input-field col s12">
+                <input placeholder="" id="number" type="text" class="validate">
+                <label for="number">รุ่นที่</label>
+            </div>
+            <div class="input-field col s12">
+                <input placeholder="" id="social" type="text" class="validate">
+                <label for="social">Social Media</label>
+            </div>
+            <div class="input-field col s12">
+                <input placeholder="" id="career" type="text" class="validate">
+                <label for="career">อาชีพ</label>
+            </div>
+            <div class="input-field col s12">
+                <input placeholder="" id="contact" type="text" class="validate">
+                <label for="contact">เบอร์โทรศัพท์</label>
+            </div>
+            <button class="btn waves-effect waves-light" type="submit" id='submit'>Submit</button>
+        </form>
+
+
+    </div>
+    <script src="js/jquery-3.2.1.min.js" charset="utf-8"></script>
+    <script src="js/materialize.js" charset="utf-8"></script>
+    <script src="js/index.js" charset="utf-8"></script>
+</body>
+
+
+</html>
