@@ -15,6 +15,13 @@ app.use(express.static('public'))
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use('/jquery', express.static(__dirname + '/node_modules/jquery/dist/'))
 
+app.post('/read', function(req, res) {
+    console.log('read')
+    db.find({}, function (err, docs) {
+        res.json(docs)
+    })
+})
+
 app.post('/check', function(req, res){
     
     db.insert(req.body, function(err, doc) {
@@ -22,20 +29,7 @@ app.post('/check', function(req, res){
     })
     
     db.find({}, function (err, docs) {
-        // var display = $('.display')
-        $.each(docs, function(key, value) { // idk how to send data to view
-            console.log('ID: ' + key)
-            console.log('Email: ' + value.email + ' Name: ' + value.name) 
-            
-
-            // $('.display').html(
-            //     '<div class="box">' +
-            //         '<div class="col s3">ID: ' + key + '</di>' +
-            //         '<div class="col s3">Email: ' + value.email + '</div>' +
-            //         '<div class="col s3">Tel: ' + value.tel + '</div>' + 
-            //     '</div>'
-            // )
-        })
+        res.json(docs)
     })
 })
 
