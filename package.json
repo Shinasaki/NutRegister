@@ -9,10 +9,12 @@
     "bootstrap": "^4.0.0-beta.2",
     "express": "^4.16.2",
     "jquery": "^3.2.1",
+    "jsdom": "^11.3.0",
     "mongodb": "^2.2.33",
     "nedb": "^1.8.0",
     "popper": "^1.0.0",
-    "popper.js": "^1.12.6"
+    "popper.js": "^1.12.6",
+    "pug": "^2.0.0-rc.4"
   },
   "devDependencies": {},
   "scripts": {
