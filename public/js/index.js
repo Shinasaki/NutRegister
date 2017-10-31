@@ -31,6 +31,7 @@ $(function(){
 function exportData(data) {
     $.post('/check', data, function (result) {
         var display = $('.collapsible')
+        display.html(' ')
         $.each(result, function( key, value ) {
             display.append(
                 '<li>' +
